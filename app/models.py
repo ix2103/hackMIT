@@ -6,3 +6,7 @@ class Search(db.Model):
 
 	def __repr__():
 		return 'Search is %r' % (self.query)
+
+class Results(db.Model):
+	tweet = db.Column(db.String(150), index = False, unique = False)
+	# JSON shit 
